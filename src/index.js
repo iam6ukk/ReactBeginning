@@ -11,7 +11,7 @@ const API_KEY = "AIzaSyAc5I1lzVSij9yUjZy6WnhJMrDIADbZlLw";
 // youtube api key
 
 class App extends Component {
-  // 컴포넌트 기반의 클래스는 자체의 state를 가짐
+  // 클래스형 컴포넌트는 자체의 state를 가짐
   // 컴포넌트 즉시 리랜더링 / render함수 재실행 (변화있을 시)
   constructor(props) {
     super(props);
