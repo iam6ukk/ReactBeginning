@@ -52,6 +52,7 @@ class App extends Component {
         <SearchBar onSearchTermChange={videoSearch} />
         {/* 검색어가 바뀌면 term과 함께 videoSearch에 전달하여 호출 */}
         <VideoDetail video={this.state.selectedVideo} />
+        {/* selectedVideo를 video에 전달 */}
         <VideoList
           onVideoSelect={(selectedVideo) => this.setState({ selectedVideo })}
           // onVideoSelect는 비디오를 가져와 selectedVideo update
