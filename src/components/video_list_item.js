@@ -3,6 +3,7 @@ import React from "react";
 const VideoListItem = ({ video, onVideoSelect }) => {
   // onVideoSelect 프로퍼티에 접근함
   const imageUrl = video.snippet.thumbnails.default.url;
+  // video 객체 가져와 선언, 유튜브로 부터 반환되는 값의 일부
 
   return (
     <li onClick={() => onVideoSelect(video)} className="list-group-item">
@@ -11,9 +12,11 @@ const VideoListItem = ({ video, onVideoSelect }) => {
       <div className="video-list media">
         <div className="media-left">
           <img className="media-object" src={imageUrl} />
+          {/* 썸네일 */}
         </div>
         <div className="media-body">
           <div className="media-heading">{video.snippet.title}</div>
+          {/* 타이틀 */}
         </div>
       </div>
     </li>
