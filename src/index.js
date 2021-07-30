@@ -11,7 +11,7 @@ const API_KEY = "AIzaSyAc5I1lzVSij9yUjZy6WnhJMrDIADbZlLw";
 // youtube api key
 
 class App extends Component {
-  // 클래스형 컴포넌트는 자체의 state를 가짐
+  // 클래스형 자체의 state를 가짐
   // 컴포넌트 즉시 리랜더링 / render함수 재실행 (변화있을 시)
   constructor(props) {
     super(props);
@@ -20,7 +20,7 @@ class App extends Component {
       videos: [],
       // state에 video를 빈 배열로 세팅
       selectedVideo: null,
-      // 어작 선택된 video가 없음
+      // 선택된 video가 없음
     };
     // state 초기값 설정
     this.videoSearch("surfboards");
