@@ -7,7 +7,7 @@ const VideoListItem = ({ video, onVideoSelect }) => {
   return (
     <li onClick={() => onVideoSelect(video)} className="list-group-item">
       {/* 유저가 li 클릭할 때마다 이벤트 필요 -> onClick 
-          유저가 클릭할 때, 클릭할 때 onVideoSelect 호출해 해당 리스트 아이템의 비디오 전달*/}
+          유저가 클릭할 때, onVideoSelect 호출해 해당 리스트 아이템의 비디오 전달*/}
       <div className="video-list media">
         <div className="media-left">
           <img className="media-object" src={imageUrl} />

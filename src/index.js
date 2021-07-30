@@ -11,6 +11,8 @@ const API_KEY = "AIzaSyAc5I1lzVSij9yUjZy6WnhJMrDIADbZlLw";
 // youtube api key
 
 class App extends Component {
+  // 컴포넌트 기반의 클래스는 자체의 state를 가짐
+  // 컴포넌트 즉시 리랜더링 / render함수 재실행 (변화있을 시)
   constructor(props) {
     super(props);
 
@@ -52,9 +54,9 @@ class App extends Component {
         <VideoDetail video={this.state.selectedVideo} />
         <VideoList
           onVideoSelect={(selectedVideo) => this.setState({ selectedVideo })}
+          // onVideoSelect는 비디오를 가져와 selectedVideo update
           videos={this.state.videos}
           // state의 videos 접근 가능, 데이터는 videos 프로퍼티 참조
-          // onVideoSelect는 비디오를 가져와 selectedVideo update
           // 1) 이 프로퍼티는 비디오 리스트에 전달
         />
         {/* 인스턴스 랜더링 */}
