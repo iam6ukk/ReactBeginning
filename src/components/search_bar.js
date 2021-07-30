@@ -18,7 +18,7 @@ class SearchBar extends Component {
       <div className="search-bar">
         <input
           value={this.state.term}
-          // this.state의 term값 가져와 인풋값 랜더링
+          // this.state의 term값 가져와 value
           onChange={(event) => this.onInputChange(event.target.value)}
           // onChange발생 시, onInputChange가 term과 함께 호출
         />
