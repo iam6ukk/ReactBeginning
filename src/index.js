@@ -18,13 +18,13 @@ class App extends Component {
 
     this.state = {
       videos: [],
-      // state에 video를 빈 배열로 세팅
+      // state에 videos를 빈 배열로 세팅
       selectedVideo: null,
-      // 선택된 video가 없음
+      // 선택된 video 없음
     };
     // state 초기값 설정
     this.videoSearch("surfboards");
-    // 초기 검색어
+    // 초기 검색어 surfboards로 설정
   }
 
   videoSearch(term) {
