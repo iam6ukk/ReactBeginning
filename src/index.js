@@ -1,6 +1,8 @@
 import _ from "lodash";
 import React, { Component } from "react";
+// 컴포넌트 생성/관리
 import ReactDOM from "react-dom";
+// 실제 DOM과 상호작용
 import YTSearch from "youtube-api-search";
 import SearchBar from "./components/search_bar";
 import VideoList from "./components/video_list";
@@ -11,6 +13,7 @@ const API_KEY = "AIzaSyAc5I1lzVSij9yUjZy6WnhJMrDIADbZlLw";
 // youtube api key
 
 class App extends Component {
+  // 클래스 컴포넌트는 내부적인 정보 저장할 때 사용
   // 클래스형 자체의 state를 가짐
   // 컴포넌트 즉시 리랜더링 / render함수 재실행 (변화있을 시)
   constructor(props) {
@@ -42,9 +45,11 @@ class App extends Component {
   }
 
   render() {
+    // 모든 리액트/클래스 컴포넌트는 render 메소드로 정의되어야 함
     const videoSearch = _.debounce((term) => {
       this.videoSearch(term);
     }, 300);
+    // 검색어 입력 끝난 후 0.3초 후 출력
     // videoSearch를 term과 함께 0.3초마다 호출
 
     return (
@@ -67,5 +72,5 @@ class App extends Component {
 }
 
 ReactDOM.render(<App />, document.querySelector(".container"));
-// App 컴포넌트를 랜더링
+// App의 인스턴스 생성 -> ReactDOM.render에게 전달
 // container라는 클래스를 가진 div를 찾고 헤당 div에 랜더링

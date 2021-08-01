@@ -2,6 +2,7 @@ import React, { Component } from "react";
 // react 라이브러리를 불러와 Componenet변수를 프로퍼티 형태로 가져옴
 
 class SearchBar extends Component {
+  // 클래스 컴포넌트는 내부적인 정보 저장할 때 사용
   // 클래스형 컴포넌트는 자체의 state를 가짐
   // 컴포넌트 즉시 리랜더링 / render함수 재실행 (변화있을 시)
   constructor(props) {
@@ -27,6 +28,7 @@ class SearchBar extends Component {
   }
 
   onInputChange(term) {
+    // 검색바 인풋 요소 변화 감지
     this.setState({ term });
     // state update
     this.props.onSearchTermChange(term);
