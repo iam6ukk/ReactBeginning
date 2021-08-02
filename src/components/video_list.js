@@ -4,6 +4,8 @@ import VideoListItem from "./video_list_item";
 const VideoList = (props) => {
   // 함수형 컴포넌트 사용할 경우, props는 함수의 요소로 들어감
   const VideoItems = props.videos.map((video) => {
+    // 배열 반복
+    // 함수 안에 video 프로퍼티를 넘겨서 전달받은 리스트 아이템 컴포넌트 반환
     // 함수 결과값 저장
     return (
       <VideoListItem

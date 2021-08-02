@@ -61,6 +61,8 @@ class App extends Component {
         <VideoList
           onVideoSelect={(selectedVideo) => this.setState({ selectedVideo })}
           // onVideoSelect는 비디오를 가져와 selectedVideo update
+          // 같이 넘길 요소 selectedVideo
+          // 비디오와 스테이트 정의하고 app 스테이트를 새 비디오로 업데이트
           videos={this.state.videos}
           // state의 videos 접근 가능, 데이터는 videos 프로퍼티 참조
           // 1) 이 프로퍼티는 비디오 리스트에 전달
