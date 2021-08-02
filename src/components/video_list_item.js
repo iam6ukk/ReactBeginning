@@ -1,7 +1,7 @@
 import React from "react";
 
 const VideoListItem = ({ video, onVideoSelect }) => {
-  // onVideoSelect 프로퍼티에 접근함
+  // video, onVideoSelect 프로퍼티에 접근함
   const imageUrl = video.snippet.thumbnails.default.url;
   // video 객체 가져와 선언, 유튜브로 부터 반환되는 값의 일부
 
