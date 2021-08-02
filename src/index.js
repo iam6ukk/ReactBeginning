@@ -33,10 +33,11 @@ class App extends Component {
   videoSearch(term) {
     // term은 검색어
     YTSearch({ key: API_KEY, term: term }, (videos) => {
+      // 비디오 리스트 반환하는 데이터 get
       this.setState({
         videos: videos,
         // this.setState({ videos })
-        // video들의 배열이여서
+        // 키 : 값
         selectedVideo: videos[0],
         // 초기 검색의 반환 값, 첫 번째 비디오 플레이되고 검색 결과 얻음
       });

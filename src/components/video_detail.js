@@ -7,7 +7,7 @@ const VideoDetail = ({ video }) => {
   // video없으면 Loading 반환
 
   const videoId = video.id.videoId;
-  // id는 video 객체 안에 있어 emned url을 가져올 수 있음
+  // id는 video 객체 안에 있어 embed url을 가져올 수 있음
   const url = `https://www.youtube.com/embed/${videoId}`;
 
   return (
